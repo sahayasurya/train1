@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Oleo+Script&family=Philosopher:ital,wght@1,700&family=Rajdhani:wght@700&family=Roboto+Mono&family=Roboto:wght@300&family=Rye&family=Sancreek&family=Shrikhand&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Ewert&family=Oleo+Script&family=Philosopher:ital,wght@1,700&family=Rajdhani:wght@700&family=Roboto+Mono&family=Roboto:wght@300&family=Rye&family=Sancreek&family=Shrikhand&family=Supermercado+One&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 15vh;
+    background-color: #031e43;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90%;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: aliceblue;
+}
+
+.heroSection {
+    background-image: url(./images/train.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-color: #031e43;
+}
+
+.content {
+    height: 100%;
+    width: 70%;
+    color: aliceblue;
+    padding: 210px 290px;
+
+}
+
+.content h1 {
+    font-family: 'Philosopher', sans-serif;
+    /* margin-left: 40px; */
+
+}
+
+.content p {
+    padding: 20px 0px;
+}
+
+.content button {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 9px;
+    /* margin-left: 70px; */
+
+}
+
+.content button a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #031e43;
+}
+
+.cardContainer {
+    width: 100%;
+    background-color: #031e43;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 20px 60px;
+
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px black;
+}
+
+.cardHeader img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.cardBody {
+    text-align: center;
+    padding: 0px 10px 10px;
+}
+
+.cardBody h2 {
+    padding: 5px 0px;
+}
+
+.cardBody p {
+    padding: 13px;
+}
+
+.cardBody button {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #0f4c87;
+}
+
+.cardBody button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.imageContainer {
+    width: 100%;
+    background-color: #031e43;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 30px 60px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.imageHeader img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Text {
+    padding: 30px 0px 0px 0px;
+}
+
+.Text h2 {
+    color: white;
+    font-family: 'Supermercado One', cursive;
+    font-size: 40px;
+}
+
+.heading {
+    padding: 25px 0px 0px 0px;
+}
+
+.heading h2 {
+    color: aliceblue;
+    font-family: 'Supermercado One', cursive;
+    font-size: 40px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown i {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.dropdown .dropdownList {
+    position: absolute;
+    top: 15px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown .dropdownList li {
+    height: 100%;
+    width: 150%;
+
+}
+
+.dropdown .dropdownList li a {
+    height: 45px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #031e43;
+}
+
+.dropdown:hover .dropdownList {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown .dropdownList li a:hover {
+    background-color: #0f4c87;
+}
+
+.dropdown1 {
+    position: relative;
+}
+
+.dropdown1 .dropdownList1 {
+    position: absolute;
+    top: 20px;
+    padding-right: 10px;
+    right: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown1 .dropdownList1 li {
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown1 .dropdownList1 li a {
+    height: 45px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #031e43;
+}
+
+.dropdown1:hover .dropdownList1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown1 .dropdownList1 li a:hover {
+    background-color: #0f4c87;
+}
+.sliderContainer{
+    background-color: #031e43;
+    padding: 50px 0 0 0;
+}
+.slider{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+.slider input{
+    display: none;
+}
+.slider figure{
+    display: flex;
+    width: 500%;
+    margin: 0;
+    left: 0;
+}
+.slider  figure video {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 20%;
+    transition: 1s;
+}
+.slider figure img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 20%;
+    transition: 1s;
+}
+.navigationButton{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.manualButton{
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+}
+.manualButton:hover{
+    background-color: grey;
+}
+#radioButton1:checked~ .first{
+    margin-left: 0;
+}
+#radioButton2:checked~ .first{
+    margin-left: -20%;
+}
+#radioButton3:checked~ .first{
+    margin-left: -40%;
+}
+#radioButton4:checked~ .first{
+    margin-left: -60%;
+}
+#radioButton5:checked~ .first{
+    margin-left: -80%;
+}
+.title h2{
+    color: white;
+    font-family: 'Supermercado One', cursive;
+    font-size: 40px;
+    transition: 1s;
+}
+foot{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f4c87;
+    color: white;
+    font-size: 18px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 12%;
+    margin-left: 20px;
+}
+.icons li{
+    list-style-type: none;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.designer p{
+    margin-right: 20px;
+}
